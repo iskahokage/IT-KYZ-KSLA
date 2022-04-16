@@ -36,6 +36,10 @@ h1{
     text-align: center;
 }
 
+.description{
+    text-align: center;
+}
+
 .footer{
     display: flex;
     flex-direction: column-reverse;
@@ -45,4 +49,14 @@ h1{
 }
 
 .copyright{
+}
+
+@media screen and (max-width: 375px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+.nav {
+    padding-top: 20px;
+ }
 }
