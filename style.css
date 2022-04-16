@@ -35,7 +35,10 @@ h1{
 .title{
     text-align: center;
 }
+.description{
+    text-align: center;
 
+}
 .footer{
     display: flex;
     flex-direction: column-reverse;
@@ -44,5 +47,12 @@ h1{
     background-color: #ada8a8;
 }
 
-.copyright{
+@media screen and (max-width: 375px){
+    .header{
+        flex-direction: column      ;
+        justify-content: center;
+    }
+    .nav{
+        padding: 20px;
+    }
 }
