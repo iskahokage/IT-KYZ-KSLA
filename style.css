@@ -24,7 +24,11 @@
 }
 
 .main{
-    height:calc(100vh - 160px);
+    /* height:calc(100vh - 160px); */
+    height: 2500px;
+    background-image: url(/img/ss.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -36,6 +40,58 @@ h1{
     text-align: center;
 }
 
+.description{
+    text-align: center;
+
+}
+
+
+.testFrom > form{
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 300px;
+    justify-content: space-around;
+}
+
+.testFrom p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.testFrom input::placeholder{
+    text-align: center;
+}
+
+.testFrom > input, button,select{
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ada8a8;
+}
+
+.testFrom textarea{
+    height: 100px;
+    resize: none;
+}
+
+.testFrom button{
+    background-color:#ec1a3b ;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.testFrom button:active{
+    background-color: #d41834;
+    box-shadow:5px 5px 5px 5px #ec1a3b;
+}
+
 .footer{
     display: flex;
     flex-direction: column-reverse;
@@ -44,5 +100,14 @@ h1{
     background-color: #ada8a8;
 }
 
-.copyright{
+
+@media screen and (max-width:375px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav{
+        padding-top: 20px;
+    }
+    
 }
