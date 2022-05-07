@@ -25,6 +25,9 @@
 
 .main{
     height:calc(100vh - 160px);
+    background-image: url();
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -37,7 +40,67 @@ h1{
 }
 .description{
     text-align: center;
+
 }
+  
+
+
+
+
+
+
+
+.testform>form{
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    max-height: 200px;
+    height: 200px;
+    justify-content:space-around ;
+}
+.testform p{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+.testform textarea {
+height: 100px;
+resize: none;
+ }
+
+.testform input::placeholder{
+ text-align: center;
+
+}
+
+.testform input,button , select{
+    height: 30px;
+    padding:0  10px;
+border-radius: 3px;
+border: 1px solid #eee;
+}
+
+.testform button{
+    background-color: crimson;
+    color: #fff;
+    font-size: 700;
+    text-transform: uppercase;
+    
+}
+.testform button:active{
+    background-color: crimson;
+    box-shadow: 5px 10px 1px #000;
+}
+
+
+
+
+
+
 
 .footer{
     display: flex;
@@ -47,8 +110,6 @@ h1{
     background-color: #ada8a8;
 }
 
-.copyright{
-}
 
 @media screen and (max-width: 375px) {
     .header{
