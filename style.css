@@ -25,6 +25,7 @@
 
 .main{
     height:calc(100vh - 160px);
+    background-image: url(./image/cosmos.jpg);
 }
 
 h1{
@@ -39,6 +40,51 @@ h1{
 .description{
     text-align: center;
 }
+
+.formclass > form{
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    height: 150px;
+    justify-content: space-around;
+}
+
+.formclass p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.formclass textarea{
+    height: 100px;
+    resize: none;
+}
+.formclass input::placeholder{
+    text-align: center;
+}
+
+.formclass input, button, select{
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid #ada8a8;
+}
+
+.formclass button{
+    background-color: #ec1a3b;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.formclass button:active{
+    background-color: aqua;
+    box-shadow: 5px 5px 10px 5px ;
+}
+
 
 .footer{
     display: flex;
