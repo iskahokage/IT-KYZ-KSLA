@@ -25,7 +25,7 @@
 
 .main{
   
-    background-image: url('./img/photo.jfif');
+    background-image: url('./img/photo.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -58,7 +58,7 @@ h1{
     flex-direction: column;
     max-width: 200px;
     
-    height: 250px;
+    height: 280px;
     justify-content:space-around ;
 }
 .testform p{
