@@ -83,7 +83,7 @@ resize: none;
     height: 30px;
     padding:0  10px;
 border-radius: 3px;
-border: 1px solid #eee;
+border: 1px solid rgb(94, 31, 31);
 }
 
 .testform button{
