@@ -1,0 +1,52 @@
+
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Flex:opsz@8..144&display=swap');
+
+@font-face{
+    font-family: "Montserrat";
+    src:url('./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf')
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+%white-Border{ /* разширит */
+    border:  2px dashed #fff;
+}
+
+@mixin fz($font-size, $size){/*размер*/
+   #{$font-size}: $size;
+}
+    
+
+
+
+$border-radius:10px; /* переменный*/
+
+.scss-Parent{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(48, 131, 199);
+    border-radius: $border-radius;
+    @extend %white-Border; /* разширит*/
+    .scss-Child{
+        width: 350px;
+        height: 350px;
+        background-color: rgb(96, 38, 87);
+        border-radius: $border-radius;
+        .scss-Child-styled{
+            background-color: #fff;
+            width: 200px;
+            height: 200px;
+            border-radius: $border-radius;
+
+            position: absolute;
+            top: 25px;
+            right: 5px;
+            z-index: 1;
+
+            @include fz(font-size, 20px)/*/ размер*/
+        }
+    }
+}

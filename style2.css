@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.scss-Parent {
+  /* разширит */
+  border: 2px dashed #fff;
+}
+
+/* переменный*/
+.scss-Parent {
+  height: 500px;
+  width: 500px;
+  background-color: #3083c7;
+  border-radius: 10px;
+  /* разширит*/
+}
+
+.scss-Parent .scss-Child {
+  width: 350px;
+  height: 350px;
+  background-color: #602657;
+  border-radius: 10px;
+}
+
+.scss-Parent .scss-Child .scss-Child-styled {
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+  z-index: 1;
+  /*размер*/
+  font-size: 20px;
+  /*/ размер*/
+}
+/*# sourceMappingURL=style2.css.map */
