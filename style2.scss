@@ -1,0 +1,46 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('./fonts/Montserrat-VariableFont_wght.ttf')
+}
+@font-face {
+    font-family: "Montserrat-Italic";
+    src: url('./fonts/Montserrat-Italic-VariableFont_wght.ttf')
+}
+*{
+    font-family: 'Montserrat-Italic', sans-serif;
+}
+
+$width: 80px;
+
+%white-Border{
+    border: 2px dashed #fff;
+}
+
+
+@mixin block($font-size, $size){
+    #{$font-size}: $size;
+}
+
+
+.scss-Parent{
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+    .scss-Child{
+        background-color: rgb(226, 180, 12);
+        height: 300px;
+        width: $width;
+        &:hover{
+            background-color: rgb(12, 226, 51);
+        }
+        &-styled{
+            background-color: rgb(255, 0, 85);
+            height: 200px;
+            width: 200px;
+            @extend %white-Border;
+            @include block(font-size, 50px)
+        }
+    }
+}
