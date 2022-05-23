@@ -10,6 +10,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+$width: 80px;
 
 %white-Border{ /* разширит */
     border:  2px dashed #fff;
@@ -44,8 +45,8 @@ $border-radius:10px; /* переменный*/
             position: absolute;
             top: 25px;
             right: 5px;
-            z-index: 1;
-
+          
+            @extend %white-Border;
             @include fz(font-size, 20px)/*/ размер*/
         }
     }

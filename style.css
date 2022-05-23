@@ -103,6 +103,14 @@ border: 1px solid rgb(94, 31, 31);
     box-shadow: 5px 10px 1px #000;
 }
 
+
+.posTitle{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(18, 17, 17);
+    font-weight: 700;
+}
+
 .parent{
     margin: 500px;
     height: 500px;
