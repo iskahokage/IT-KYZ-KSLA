@@ -1,14 +1,20 @@
 
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Flex:opsz@8..144&display=swap');
+//  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Flex:opsz@8..144&display=swap');
 
 @font-face{
-    font-family: "Montserrat";
+    font-family: "Montserrat-Italic";
     src:url('./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf')
 }
 
-*{
-    font-family: 'Montserrat', sans-serif;
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
+
+*{
+    font-family: 'Montserrat-Italic', sans-serif;
+}
+
 
 $width: 80px;
 
@@ -26,28 +32,38 @@ $width: 80px;
 $border-radius:10px; /* переменный*/
 
 .scss-Parent{
+    background-color: aqua;
     height: 500px;
     width: 500px;
-    background-color: rgb(48, 131, 199);
     border-radius: $border-radius;
     @extend %white-Border; /* разширит*/
+    &:hover{
+         background-color: rgb(12, 226, 51);
+     }
     .scss-Child{
-        width: 350px;
-        height: 350px;
         background-color: rgb(96, 38, 87);
+        width: 350px;
+        height: 300px;   
         border-radius: $border-radius;
+        
+        &:hover{
+            background-color: rgb(12, 44, 226);
+        }
         .scss-Child-styled{
             background-color: #fff;
             width: 200px;
             height: 200px;
             border-radius: $border-radius;
-
-            position: absolute;
-            top: 25px;
-            right: 5px;
+            &:hover{
+                background-color: rgb(226, 222, 12);
+            }
+            // position: absolute;
+            // top: 25px;
+            // right: 5px;
           
             @extend %white-Border;
             @include fz(font-size, 20px)/*/ размер*/
-        }
+     
+        }      
     }
 }

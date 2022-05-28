@@ -1,11 +1,16 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat-Italic";
   src: url("./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat-Italic', sans-serif;
 }
 
 .scss-Parent, .scss-Parent .scss-Child .scss-Child-styled {
@@ -15,18 +20,26 @@
 
 /* переменный*/
 .scss-Parent {
+  background-color: aqua;
   height: 500px;
   width: 500px;
-  background-color: #3083c7;
   border-radius: 10px;
   /* разширит*/
 }
 
+.scss-Parent:hover {
+  background-color: #0ce233;
+}
+
 .scss-Parent .scss-Child {
-  width: 350px;
-  height: 350px;
   background-color: #602657;
+  width: 350px;
+  height: 300px;
   border-radius: 10px;
+}
+
+.scss-Parent .scss-Child:hover {
+  background-color: #0c2ce2;
 }
 
 .scss-Parent .scss-Child .scss-Child-styled {
@@ -34,11 +47,12 @@
   width: 200px;
   height: 200px;
   border-radius: 10px;
-  position: absolute;
-  top: 25px;
-  right: 5px;
   /*размер*/
   font-size: 20px;
   /*/ размер*/
+}
+
+.scss-Parent .scss-Child .scss-Child-styled:hover {
+  background-color: #e2de0c;
 }
 /*# sourceMappingURL=style2.css.map */
