@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 //  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Flex:opsz@8..144&display=swap');
 
@@ -11,10 +12,23 @@
     src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
+=======
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('./fonts/Montserrat-VariableFont_wght.ttf')
+}
+@font-face {
+    font-family: "Montserrat-Italic";
+    src: url('./fonts/Montserrat-Italic-VariableFont_wght.ttf')
+}
+>>>>>>> 97abaf3a40ce9a9df3d9a088c6d111a9bdbe87bb
 *{
     font-family: 'Montserrat-Italic', sans-serif;
 }
 
+<<<<<<< HEAD
 
 $width: 80px;
 
@@ -31,10 +45,25 @@ $width: 80px;
 
 $border-radius:10px; /* переменный*/
 
+=======
+$width: 80px;
+
+%white-Border{
+    border: 2px dashed #fff;
+}
+
+
+@mixin block($font-size, $size){
+    #{$font-size}: $size;
+}
+
+
+>>>>>>> 97abaf3a40ce9a9df3d9a088c6d111a9bdbe87bb
 .scss-Parent{
     background-color: aqua;
     height: 500px;
     width: 500px;
+<<<<<<< HEAD
     border-radius: $border-radius;
     @extend %white-Border; /* разширит*/
     &:hover{
@@ -65,5 +94,21 @@ $border-radius:10px; /* переменный*/
             @include fz(font-size, 20px)/*/ размер*/
      
         }      
+=======
+    .scss-Child{
+        background-color: rgb(226, 180, 12);
+        height: 300px;
+        width: $width;
+        &:hover{
+            background-color: rgb(12, 226, 51);
+        }
+        &-styled{
+            background-color: rgb(255, 0, 85);
+            height: 200px;
+            width: 200px;
+            @extend %white-Border;
+            @include block(font-size, 50px)
+        }
+>>>>>>> 97abaf3a40ce9a9df3d9a088c6d111a9bdbe87bb
     }
 }
