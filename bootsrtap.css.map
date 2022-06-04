@@ -1,1 +1,9 @@
-{"version":3,"sources":["bootsrtap.scss","bootsrtap.css"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,SAAA;EACA,sBAAA;ACCJ;;ADGA;EACI,sBAAA;EACA,aAAA;EACA,kBAAA;ACAJ;;ADEA;EACI,iBAAA;EACA,aAAA;EACA,gBAAA;EACA,cAAA;ACCJ","file":"bootsrtap.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;AAGD,AAAA,qBAAqB,CAAA;EACjB,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,KAAK;CACrB;;AACD,AAAA,mBAAmB,CAAA;EACf,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,KAAK;EACb,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "bootsrtap.scss"
+    ],
+    "names": [],
+    "file": "bootsrtap.css"
+}
