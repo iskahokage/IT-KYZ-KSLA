@@ -1,0 +1,21 @@
+.scss-Parent {
+  height: 500px;
+  width: 500px;
+  background-color: #64e72c;
+  border-radius: 10px;
+}
+
+.scss-Parent .scss-Child {
+  width: 350px;
+  height: 350px;
+  background-color: #da4848;
+  border-radius: 10px;
+}
+
+.scss-Parent .scss-Child .scss-Child-styled {
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style2.css.map */
