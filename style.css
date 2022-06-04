@@ -1,3 +1,17 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: "Montserrat-Italic";
+    src: url(./fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: 'Montserrat-Italic',sans-serif;
+}
+
 *{
  box-sizing: border-box;
  margin: 0;
@@ -9,6 +23,9 @@
     justify-content: space-around;
     background-color: #ada8a8;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 
@@ -19,12 +36,36 @@
 .nav > li{
     margin-left: 15px;
 }
+
+.nav > li > a{
+    text-decoration: none;
+    /* transition: all 5s ease-in-out; */
+    color:#000;
+    transition-property: color,font-size , border-bottom;
+    transition-duration: 1s, .2s, .5s ;
+    transition-timing-function: ease, ease-in-out, ease;
+}
+
 .nav > li:first-child{
     margin-left: 0px;
 }
 
+
+.nav > li > a:hover{
+    color:red;
+    font-size: 20px;
+    border-bottom: 2px solid #f31d1d;
+}
+
+.nav > li > a:active{
+    color: #cdcdcd;
+    border-bottom: 2px solid #cdcdcd;
+    transition: all .2s ease;
+}
+
 .main{
     /* height:calc(100vh - 160px); */
+    padding-top:100px ;
     height: 2500px;
     background-image: url(/img/ss.jpg);
     background-size: cover;
@@ -90,6 +131,42 @@ h1{
 .testFrom button:active{
     background-color: #d41834;
     box-shadow:5px 5px 5px 5px #ec1a3b;
+}
+
+.animations{
+    position: relative;
+    height: 300px;
+}
+
+
+.ball{
+    width: 100px;
+    height:100px;
+    background-color:#000;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: ball ;
+    animation-duration: 5s;
+}
+
+@keyframes ball {
+    0%{
+        left: 0;
+    }
+    25%{
+        top: 50px;
+    }
+    50%{
+        background-color: #f31d1d;
+        top: 100px;
+    }
+    75%{
+        top: 50px;
+    }
+
+    100%{
+        left: calc(100vw - 105px);
+    }
 }
 
 .footer{
