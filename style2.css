@@ -10,7 +10,7 @@
 }
 
 * {
-  font-family: 'Montserrat-Italic', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .scss-Parent, .scss-Parent .scss-Child .scss-Child-styled {
