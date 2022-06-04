@@ -2,12 +2,14 @@
   font-family: "Montserrat";
   src: url("./fonts/Montserrat-VariableFont_wght.ttf");
 }
+
 @font-face {
   font-family: "Montserrat-Italic";
   src: url("./fonts/Montserrat-Italic-VariableFont_wght.ttf");
 }
+
 * {
-  font-family: "Montserrat-Italic", sans-serif;
+  font-family: 'Montserrat-Italic', sans-serif;
 }
 
 .scss-Parent .scss-Child-styled {
@@ -19,17 +21,21 @@
   height: 500px;
   width: 500px;
 }
+
 .scss-Parent .scss-Child {
-  background-color: rgb(226, 180, 12);
+  background-color: #e2b40c;
   height: 300px;
   width: 80px;
 }
+
 .scss-Parent .scss-Child:hover {
-  background-color: rgb(12, 226, 51);
+  background-color: #0ce233;
 }
+
 .scss-Parent .scss-Child-styled {
-  background-color: rgb(255, 0, 85);
+  background-color: #ff0055;
   height: 200px;
   width: 200px;
   font-size: 50px;
-}/*# sourceMappingURL=style2.css.map */
+}
+/*# sourceMappingURL=style2.css.map */
