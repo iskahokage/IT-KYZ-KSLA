@@ -7,7 +7,7 @@
   src: url("./fonts/Montserrat-Italic-VariableFont_wght.ttf");
 }
 * {
-  font-family: "Montserrat-Italic", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .scss-Parent .scss-Child-styled {
@@ -31,5 +31,5 @@
   background-color: rgb(255, 0, 85);
   height: 200px;
   width: 200px;
-  font-size: 50px;
+  font-size: 20px;
 }/*# sourceMappingURL=style2.css.map */
