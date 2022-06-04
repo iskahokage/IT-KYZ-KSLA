@@ -9,6 +9,9 @@
     justify-content: space-around;
     background-color: #ada8a8;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 
@@ -24,8 +27,11 @@
 }
 
 .main{
-    height:calc(100vh - 160px);
+    padding-top: 160px;
+    height: 2500px;
     background-image: url(./image/cosmos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -46,7 +52,7 @@ h1{
     display: flex;
     flex-direction: column;
     max-width: 200px;
-    height: 150px;
+    height: 250px;
     justify-content: space-around;
 }
 

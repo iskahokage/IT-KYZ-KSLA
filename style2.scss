@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('./fonts/Montserrat/Montserrat-VariableFont wght.ttf');
+}
+
+
+$width: 80px;
+
+%white-Border{
+    border: 2px dashed #fff
+}
+@mixin fz($font-size, $size) {
+    #{$font-size}: $size;
+}
+ 
+    
+
+
+$border-radius: 10px;
+
+.scss-Parent{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(134, 195, 117);
+    border-radius: $border-radius;
+    @extend %white-Border;
+    .scss-Child{
+        width: 350px;
+        height: 350px;
+        background-color: rgb(220, 72, 72);
+        border-radius: $border-radius;
+        position: relative;
+        .scss-Child-styled{
+            background-color: #fff;
+            width: 200px;
+            height: 200px;
+            border-radius: $border-radius;
+            // @include fz(font-size, 20px)
+
+            position:absolute;
+            top: 25px;
+            right: 5px;
+            z-index: 10px;
+
+
+        }
+
+    }
+}

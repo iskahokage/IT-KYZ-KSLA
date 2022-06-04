@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-VariableFont wght.ttf");
+}
+
+.scss-Parent {
+  border: 2px dashed #fff;
+}
+
+.scss-Parent {
+  height: 500px;
+  width: 500px;
+  background-color: #86c375;
+  border-radius: 10px;
+}
+
+.scss-Parent .scss-Child {
+  width: 350px;
+  height: 350px;
+  background-color: #dc4848;
+  border-radius: 10px;
+  position: relative;
+}
+
+.scss-Parent .scss-Child .scss-Child-styled {
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+  z-index: 10px;
+}
+/*# sourceMappingURL=style2.css.map */
