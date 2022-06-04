@@ -26,6 +26,34 @@
     margin-left: 0px;
 }
 
+.nav > li > a{
+    text-decoration: none;
+    /* transition: all .2s ease-in-out; */
+    transition-property: color, font-size, border-bottom;
+    transition-duration:  1s, .2s;
+    transition-timing-function: ease;
+    color: #000; 
+}
+
+.nav >li:first-child{
+    margin-left: 0px;
+}
+
+.nav > li > a:hover {
+    color: #ec1a3b;
+    font-size: 20px;
+    border-bottom: 2px solid red;
+}
+
+.nav > li > a:active{
+    color: #cdcdcd;
+    border-bottom: 2px solid #cdcdcd;
+    transition: all .2s ease;
+
+
+}
+
+
 .main{
     padding-top: 160px;
     height: 2500px;
@@ -90,6 +118,40 @@ h1{
     background-color: aqua;
     box-shadow: 5px 5px 10px 5px ;
 }
+
+.animation{
+    position: relative;
+    height: 300px;
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+    animation: ball;
+    animation-duration: 5s;
+}
+
+@keyframes ball {
+   0%{
+       left: 0;
+   }
+   25%{
+       top: 50px;
+   }
+   50%{
+       background-color: coral;
+       top: 100px;
+   }
+   75%{
+       top: 50px;
+   }
+   100%{
+       left:calc(100vw - 105px);
+   }
+}   
 
 
 .footer{
