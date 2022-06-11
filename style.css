@@ -18,6 +18,7 @@
 .nav{
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 .nav > li{
     margin-left: 15px;
@@ -53,11 +54,15 @@
 
 }
 
+#menu, #burger-menu{
+    display: none;
+}
+
 
 .main{
     padding-top: 160px;
     height: 2500px;
-    background-image: url(./image/cosmos.jpg);
+    background-image: url(./image/sky.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -69,6 +74,7 @@ h1{
 
 .title{
     text-align: center;
+    color: #fff;
 }
 
 .description{
@@ -80,7 +86,7 @@ h1{
     display: flex;
     flex-direction: column;
     max-width: 200px;
-    height: 250px;
+    height: 310px;
     justify-content: space-around;
 }
 
@@ -117,6 +123,46 @@ h1{
 .formclass button:active{
     background-color: aqua;
     box-shadow: 5px 5px 10px 5px ;
+}
+
+
+.posTitle{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+.parent{
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.child{
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    background-color: #d41834;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1;
+}
+.child-2{
+    width: 300px;
+    height: 300px;
+    background-color: #18d47c;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
 }
 
 .animation{
@@ -165,12 +211,39 @@ h1{
 .copyright{
 }
 
-@media screen and (max-width: 375px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 1024px) {
+.nav{
+    display: none;
+}
+
+#menu, #burger-menu{
+    display: block;
+}
+
+.parent{
+        margin-left: auto ;
+        margin-right: auto;
     }
-.nav {
-    padding-top: 20px;
- }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .parent, .child, .child-2{
+        width: 80%;
+}
+
+.parent{
+    
+    height: 14%;
+}
+.child-2{
+    right: 50px;
+}
+
+.ball{
+    width: 30px;
+    height: 50px;
+}
+    
 }

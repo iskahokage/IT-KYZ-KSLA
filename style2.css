@@ -3,33 +3,135 @@
   src: url("./fonts/Montserrat/Montserrat-VariableFont wght.ttf");
 }
 
-.scss-Parent {
+.scss-Parent .scss-Child-styled {
   border: 2px dashed #fff;
 }
 
 .scss-Parent {
+  background-color: aqua;
   height: 500px;
   width: 500px;
-  background-color: #86c375;
-  border-radius: 10px;
 }
 
 .scss-Parent .scss-Child {
-  width: 350px;
-  height: 350px;
-  background-color: #dc4848;
-  border-radius: 10px;
-  position: relative;
+  background-color: #e2b40c;
+  height: 300px;
+  width: 80px;
 }
 
-.scss-Parent .scss-Child .scss-Child-styled {
-  background-color: #fff;
-  width: 200px;
+.scss-Parent .scss-Child:hover {
+  background-color: #0ce233;
+}
+
+.scss-Parent .scss-Child-styled {
+  background-color: #ff0055;
   height: 200px;
-  border-radius: 10px;
-  position: absolute;
-  top: 25px;
-  right: 5px;
-  z-index: 10px;
+  width: 200px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .scss-Parent {
+    margin: 0 auto;
+  }
+  #burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 50px;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+  }
+  #burger-menu span,
+  #burger-menu span:before,
+  #burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  #burger-menu span:before,
+  #burger-menu span:after {
+    content: '';
+  }
+  #burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+  }
+  #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+  }
+  #burger-menu.close span:before {
+    top: 0px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 27px;
+  }
+  #burger-menu.close span {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+  }
+  #menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #menu ul {
+    padding: 0;
+  }
+  #menu li {
+    list-style: none;
+  }
+  #menu a {
+    color: #fff;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 320px) and (max-width: 420px) {
+  .scss-Parent {
+    width: 80%;
+    height: 14%;
+  }
 }
 /*# sourceMappingURL=style2.css.map */
