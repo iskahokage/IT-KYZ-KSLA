@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container-attributes {
@@ -15,4 +16,5 @@
   height: 500px;
   max-width: 500px;
   margin: 0 auto;
-}/*# sourceMappingURL=bootsrtap.css.map */
+}
+/*# sourceMappingURL=bootsrtap.css.map */
