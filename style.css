@@ -4,39 +4,205 @@
  padding: 0;   
 }
 
+
 .header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #ada8a8;
     padding: 20px 0;
+    position: sticky;
+    width: 100%;
+    z-index: 999;
 }
 
 
 .nav{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 .nav > li{
     margin-left: 15px;
 }
+.nav > li > a {
+ text-decoration: none;
+ /* transition: color .2s ease-in-out; */
+ transition-property: color, font-size, border-bottom;
+ transition-duration: 1s, .2s, .5s;
+ transition-timing-function: ease, ease-in-out, ease;
+
+ color: #000;   
+}
 .nav > li:first-child{
     margin-left: 0px;
 }
+.nav > li > a:hover{
+    color: red;
+    font-size: 20px;
+    border-bottom: 2px solid red;
+}
+.nav > li > a:active{
+    color: #cdcdcd;
+    border-bottom: 2px solid #cdcdcd;
+    transition: all .2s ease;
+
+}
+#menu, #burger-menu{
+    display:none;
+}
 
 .main{
-    height:calc(100vh - 160px);
+    /* height:calc(100vh - 160px); */
+    /* padding-top: 250px; */
+    height: 2500px;
+    background-image: url('./images/0751e68e1befcd95ba313f1235c1e0dd.jpg');
+    background-size:cover;
+    background-attachment: fixed;
 }
 
 h1{
     padding-top: 30px;
     text-align: center;
+    color: #fff;
 }
 
 .title{
     text-align: center;
+    color: #fff;
 }
 .description{
     text-align: center;
+<<<<<<< HEAD
+=======
+    color: #fff;
+}
+.testForm > form{
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 300px;
+ 
+    justify-content: space-around;
+}
+.testForm p{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+.testForm textarea{
+    height: 100px;
+    resize: none;
+}
+.testForm input::placeholder{
+    text-align: center;
+}
+.testForm input, button, select {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid #ada8a8;
+}
+
+.name::-ms-clear{
+    background-color: #18d47c;
+}
+
+.testForm button {
+    background-color: #ec1a3b;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.testForm button:active {
+    background-color: #d41834;
+    box-shadow: 5px 5px 10px 5px #ec1a3b;
+}
+.posTitle{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+.parent{
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #d4d4d4;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.child{
+    max-width: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    background-color: #d41834;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1;
+}
+.child-2{
+    max-width: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    background-color: #18d47c;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+.animations{
+    position: relative;
+    height: 300px;
+}
+
+
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    position: absolute;
+
+    animation-name: ball;
+    animation-duration: 5s;
+}
+
+@keyframes ball {
+    0%{
+        left: 0;
+    }
+    25%{
+        top: 50px;
+    }
+    50% {
+        background-color: coral;
+        top: 100px;
+    }
+    75%{
+        top: 50px;
+    }
+    100%{
+        left: calc(100vw - 105px)
+    }
+}
+
+
+
+>>>>>>> 832bd32e4342c7aa63a4584c2bc8c34b0b8c6b03
 
 }
 .footer{
@@ -47,6 +213,7 @@ h1{
     background-color: #ada8a8;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 375px){
     .header{
         flex-direction: column      ;
@@ -55,4 +222,40 @@ h1{
     .nav{
         padding: 20px;
     }
+=======
+.copyright{
+}
+@media screen and (max-width: 1024px) {
+    .nav{
+        display: none;
+    }
+    #menu,#burger-menu{
+        display: block;
+    }
+    .parent{
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+   .nav{
+    justify-content: center;
+   }
+    .parent,.child,.child-2{
+    width: 80%;
+  }  
+  .parent{
+    height: 14%;
+  }
+  
+  .child-2{
+    right: 50%;
+    width: 80%;
+  }
+  .ball{
+    width: 50px;
+    height: 50px;
+  }
+>>>>>>> 832bd32e4342c7aa63a4584c2bc8c34b0b8c6b03
 }
