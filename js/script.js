@@ -8,7 +8,12 @@ function displayDate(){
     element.style.color = 'black';
     element.style.fontSize = '20px';
 }
-function upperCase(){
+function upperCase() {
     let element = document.getElementsByName('firstName')[0];
     element.value = element.value.toUpperCase()
+}
+
+function displayChange() {
+    let elem = document.getElementsByName('positions')[0];
+
 }
