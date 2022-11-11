@@ -61,3 +61,67 @@ function addForm(elem) {
 function display(a) {
     a.innerHTML = "I Love  you Begimai";
 }
+
+
+
+// let element_container = document.querySelector('.element_container');
+
+// let elem1 = document.createElement("p");
+// let elem2 = document.createElement("p");
+
+// elem1.style.color = 'red';
+
+// elem1.append('Element 1');
+// elem1.prepend('ELEMENT 2');
+
+// elem1.innerText = "<span>innerText</span>";
+
+// elem2.innerHTML = "<h1>innerText</h1> "
+
+// element_container.append(elem1);
+// element_container.append(elem2);
+
+// let main = document.getElementsByClassName('main')[0];
+
+let element_container = document.querySelector('.element_container');
+
+element_container.style.display = 'flex';
+element_container.style.justifyContent = 'space-around'
+element_container.style.padding = '20px'
+
+let btn_on = document.createElement('button');
+let btn_off = document.createElement('button');
+
+btn_on.innerText = 'включить темную тему'
+btn_off.innerText = 'Отключить темную тему'
+
+element_container.append(btn_on)
+element_container.append(btn_off)
+
+btn_on.addEventListener('click', () => {
+    mask.classList.add('dark-theme')
+})
+
+btn_off.addEventListener('click', () => {
+    mask.classList.remove('dark-theme')
+    console.log(e)
+})
+
+document.addEventListener('keydown', (e) => {
+    if (e.code === 'KeyA') {
+        mask.classList.add('dark-theme')
+    } else if (e.code === 'KeyB') {
+        mask.classList.remove('dark-theme')
+    }
+})
+
+
+let mask = document.querySelector('.mask');
+
+
+let time = new Date().getHours();
+
+
+if (time > 13) {
+    mask.classList.add('dark-theme')
+}

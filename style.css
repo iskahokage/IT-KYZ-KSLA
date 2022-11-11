@@ -1,94 +1,94 @@
-*{
- box-sizing: border-box;
- margin: 0;
- padding: 0;   
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.header{
+.header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color:  #bcb7b7;
+    background-color: #bcb7b7;
     padding: 20px 0;
     position: sticky;
     width: 100%;
     z-index: 999;
 }
 
-
-.nav{
+.nav {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
-.nav > li{
+
+.nav>li {
     margin-left: 15px;
 }
-.nav > li:first-child{
+
+.nav>li:first-child {
     margin-left: 0px;
 }
 
-.nav>li>a{
+.nav>li>a {
     text-decoration: none;
     /* transition: all .2s ease-in-out 50ms ; */
-transition-property: color , font-size, border-bottom;
-text-decoration: 1s,.2s;
-transition-timing-function: ease , ease-in-out ,ease;
-
+    transition-property: color, font-size, border-bottom;
+    text-decoration: 1s, .2s;
+    transition-timing-function: ease, ease-in-out, ease;
     color: #000;
     border-bottom: #000;
 }
 
-.nav>li>a:hover{
+.nav>li>a:hover {
     color: #d41834;
     font-size: 20px;
-    border-bottom:2px solid #d41834;
+    border-bottom: 2px solid #d41834;
 }
 
-.nav>li>a:active{
+.nav>li>a:active {
     color: #fff;
     border-bottom: 2px solid #fff;
     transition: all .2s ease;
 }
 
-
-.menu,#burger-menu{
-display: none;
+.menu,
+#burger-menu {
+    display: none;
 }
 
-.main{
+.main {
     /* height:calc(100vh - 160px); */
     /* padding-top: 250px; */
-    height: 2500px;
+    height: auto;
     background-image: url('./img/photo.jpg');
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
 }
 
-h1{
+.dark-theme {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
     padding-top: 30px;
     text-align: center;
     color: #000;
 }
 
-.title{
+.title {
     text-align: center;
     color: #000;
 }
-.description{
+
+.description {
     text-align: center;
-
 }
-  
 
-
-
-
-.testform{
-   height: 500px;
+.testform {
+    height: 500px;
 }
-.testForm > form{
+
+.testForm>form {
     margin: 50px auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -96,28 +96,34 @@ h1{
     height: 300px;
     justify-content: space-around;
 }
-.testForm p{
+
+.testForm p {
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
 }
-.testForm textarea{
+
+.testForm textarea {
     height: 100px;
     resize: none;
 }
-.testForm input::placeholder{
+
+.testForm input::placeholder {
     text-align: center;
 }
-.testForm input, button, select {
+
+.testForm input,
+button,
+select {
     height: 30px;
     padding: 0 10px;
     border-radius: 3px;
     border: 1px solid #ada8a8;
 }
 
-.name::-ms-clear{
+.name::-ms-clear {
     background-color: #18d47c;
 }
 
@@ -127,17 +133,20 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .testForm button:active {
     background-color: #d41834;
     box-shadow: 5px 5px 10px 5px #ec1a3b;
 }
-.posTitle{
+
+.posTitle {
     text-align: center;
     font-size: 50px;
     color: #fff;
     font-weight: 700;
 }
-.parent{
+
+.parent {
     width: 500px;
     height: 500px;
     background-color: #d4d4d4;
@@ -146,7 +155,7 @@ h1{
     margin-bottom: 20px;
 }
 
-.child{
+.child {
     width: 300px;
     height: 300px;
     background-color: #d41834;
@@ -156,7 +165,8 @@ h1{
     right: 20px;
     z-index: 1;
 }
-.child-2{
+
+.child-2 {
     width: 300px;
     height: 300px;
     background-color: #18d47c;
@@ -166,64 +176,61 @@ h1{
     right: 100px;
 }
 
-
-.testform>form{
+.testform>form {
     margin: 50px auto 0 auto;
     display: flex;
     flex-direction: column;
     max-width: 200px;
-    
     height: 280px;
-    justify-content:space-around ;
+    justify-content: space-around;
 }
-.testform p{
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 20px;
-    }
+
+.testform p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
 
 .testform textarea {
-height: 100px;
-resize: none;
- }
-
-.testform input::placeholder{
- text-align: center;
-
+    height: 100px;
+    resize: none;
 }
 
-.testform input,button , select{
+.testform input::placeholder {
+    text-align: center;
+}
+
+.testform input,
+button,
+select {
     height: 30px;
-    padding:0  10px;
-border-radius: 3px;
-border: 1px solid rgb(94, 31, 31);
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(94, 31, 31);
 }
 
-.testform button{
+.testform button {
     background-color: crimson;
     color: #fff;
     font-size: 700;
     text-transform: uppercase;
-    
 }
-.testform button:active{
+
+.testform button:active {
     background-color: crimson;
     box-shadow: 5px 10px 1px #000;
 }
 
-
-.posTitle{
+.posTitle {
     text-align: center;
     font-size: 50px;
     color: rgb(18, 17, 17);
     font-weight: 700;
 }
 
-
-
-.parent{
+.parent {
     max-width: 500px;
     max-height: 500px;
     width: 100%;
@@ -234,28 +241,26 @@ border: 1px solid rgb(94, 31, 31);
     left: 20px; */
     position: relative;
     margin-bottom: 20px;
-
 }
 
-.child{
-   max-width: 300px;
-   max-height: 300px;
-    width: 100%;
-    height: 100%;
-   background-color: rgb(232, 7, 7);
-  border-radius: 6px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  z-index: 1;
-
-}
-
-.child-2{
+.child {
     max-width: 300px;
     max-height: 300px;
-     width: 100%;
-     height: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(232, 7, 7);
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1;
+}
+
+.child-2 {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
     background-color: rgb(10, 201, 163);
     border-radius: 6px;
     position: absolute;
@@ -263,46 +268,44 @@ border: 1px solid rgb(94, 31, 31);
     right: 100px;
 }
 
-.animations{
+.animations {
     position: relative;
     height: 300px;
 }
 
-.boll{
+.boll {
     width: 100px;
     height: 100px;
     background-color: rgb(139, 77, 226);
     border-radius: 100px;
     position: absolute;
-
     animation-name: boll;
     animation-duration: 5s;
-
 }
 
-@keyframes boll{
-    0%{
+@keyframes boll {
+    0% {
         left: 0;
     }
-    25%{
+    25% {
         top: 50px;
     }
-    50%{
+    50% {
         background-color: rgb(218, 69, 171);
         top: 100px;
     }
-    75%{
+    75% {
         top: 50px;
     }
-    100%{
-        left:calc(100vw - 105px);
+    100% {
+        left: calc(100vw - 105px);
     }
-
 }
+
 
 /* footer*/
 
- .footer{
+.footer {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -310,40 +313,37 @@ border: 1px solid rgb(94, 31, 31);
     background-color: #bcb7b7;
 }
 
-@media screen and ( max-width:1024px){
-
-    .nav{
+@media screen and ( max-width:1024px) {
+    .nav {
         display: none;
     }
-    #menu,#burger-menu{
-        display:block;
+    #menu,
+    #burger-menu {
+        display: block;
     }
-    .parent{
+    .parent {
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-
-
 @media screen and (min-width: 320px) and (max-width: 426px) {
-
-    .nav{
+    .nav {
         justify-content: center;
     }
-    .parent, .child,.child-2{
+    .parent,
+    .child,
+    .child-2 {
         width: 80%;
     }
-    .parent{
+    .parent {
         height: 14%;
     }
-    .child-2{
+    .child-2 {
         right: 50px;
     }
-    .boll{
+    .boll {
         width: 50px;
         height: 50px;
     }
 }
-
-
