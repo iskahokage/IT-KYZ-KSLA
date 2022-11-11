@@ -35,11 +35,24 @@
 
 //дз
 
-let copyright = document.getElementsByClassName('copyright')[0];
-copyright.style.color = 'red';
+// let copyright = document.getElementsByClassName('copyright')[0];
+// copyright.style.color = 'red';
 
-console.log(copyright);
+// console.log(copyright);
 
 function changeText(id) {
     id.innerHTML = "НЕ ДЕЛАЙ ТАК !";
+}
+
+
+
+function main(elem) {
+    elem.innerHTML = "^~^ Ужас";
+    elem.style.color = "red";
+    elem.style.fontSize = "50px";
+    elem.style.textAlgin = "center";
+}
+
+function addForm(elem) {
+    alert("Ты не знаешь мааама он не такой, он не такой как все ")
 }
