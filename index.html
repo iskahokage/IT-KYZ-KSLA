@@ -16,7 +16,7 @@
         </p>
         <nav>
             <ul class="nav">
-              <li> <a href="#">Контакты</a></li>
+              <li><a href="#">Контакты</a></li>
                 <li><a href=""> Главная IT-KYZ</a></li>
                 <li><a href="">О нас</a></li>
                 <li><a href="">Портфолио</a></li>
@@ -56,15 +56,17 @@
                       <option value="">ИБ</option>
                       <option value="">ИТиУ</option>
                 </select>
-                <textarea placeholder="Ваши пожелания"></textarea>
-                  <button>Отправить</button>
+                <textarea placeholder="Ваши пожелания"onmouseenter ="textData()"></textarea>
+                  <button onclick="countData()">Отправить</button>
               </form>
         </div>
         <div class="animations">
             <h2 class="posTitle">Анимация</h2>
+            <input type="button" value="Показать время" onclick="displayDate()">
             <div class="ball"></div>
         </div>
         <p class="posTitle">POSITIONS</p>
+        
       <div class="parent">
         <div class="child"></div>
         <div class="child-2"></div>
@@ -80,11 +82,11 @@
     </main>
 
     <footer class="footer">
-        <p class="copyright">
+        <p class="copyright" name="copyright">
             &copy; 2022 IT_KYZ KSLA. All Rights Reserved.
         </p>
     </footer>
 
 </body>
-<script src="/script.js"></script>
+<script src="/js/script.js"></script>
 </html>
