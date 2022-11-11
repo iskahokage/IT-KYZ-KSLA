@@ -56,3 +56,8 @@ function main(elem) {
 function addForm(elem) {
     alert("Ты не знаешь мааама он не такой, он не такой как все ")
 }
+
+
+function display(a) {
+    a.innerHTML = "I Love  you Begimai";
+}
