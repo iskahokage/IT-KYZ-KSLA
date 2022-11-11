@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,37 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style2.css">
     <title>First maket</title>
-  </head>
-  <body>
-    <header class="header">
+</head>
+
+<body>
+    <header class="header" name="header">
         <p>
             <img src="https://ksla.kg/wp-content/uploads/2021/10/main-icon.svg" alt="">
-            
+
         </p>
         <nav>
             <ul class="nav">
-              <li> <a href="#">Главная IT-KYZ</a></li>
-              <li> <a href="#">О нас</a></li>
-              <li> <a href="#"> Портфолио</a></li>
-              <li>
-                <a href="./bootstrap.html">bootsrtap</a>
-              </li>
-              <li> <a href="#">Контакты</a></li>
+                <li> <a href="#">Главная IT-KYZ</a></li>
+                <li> <a href="#">О нас</a></li>
+                <li> <a href="#"> Портфолио</a></li>
+                <li>
+                    <a href="./bootstrap.html">bootsrtap</a>
+                </li>
+                <li> <a href="#">Контакты</a></li>
             </ul>
-          </nav>
+        </nav>
+
+        <div id="burger-menu">
+            <span></span>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+
     </header>
 
     <main class="main">
@@ -40,7 +54,7 @@
                 <p>Форма добавления</p>
                 <input type="text" placeholder="Ввидите имя" name="firstName" id="">
                 <input type="text" placeholder="Введите  фамилию" name="lastName" id="">
-                
+
                 <select name="group">
                     <option> ПИ1</option>
                     <option > иб</option>
@@ -48,30 +62,40 @@
                 </select>
                 <textarea placeholder="о себе"></textarea>
                 <button> отправить</button>
-           </form>
-        </div> 
+            </form>
+        </div>
 
         <!-- навый-->
         <div class="animations">
             <h2 class="posTitle"> Анимации</h2>
+            <!-- <input type="button" value="поменять цвет" onclick="document.getElementsByClassName('posTitle')[0].style.color='white'"> -->
+            <input type="button" value="поменять цвет" onclick="displayDate()">
+
             <div class="boll"></div>
         </div>
-        <p class="posTitle">POSITIONS</p>
+        <p class="posTitle" id="positions">POSITIONS</p>
+        <div class="parent">
+            <div class="child"></div>
+            <div class="child-2"></div>
+        </div>
         <div class="scss-Parent">
             <div class="scss-Child">
-              <div class="scss-Child-styled">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, quisquams
-              </div>
-  
+                <div class="scss-Child-styled">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, quisquams
+                </div>
+
             </div>
-          </div>
+        </div>
         <!-- /-->
     </main>
     <footer class="footer">
-        <p class="copyright">
-            &copy; 2022 IT_KYZ KSLA. All Rights Reserved.
-            Begimai
+        <p class="copyright" onclick="changeText(this)">
+            &copy; 2022 IT_KYZ KSLA. All Rights Reserved. Begimai
         </p>
     </footer>
-  </body>
+
+    <script src="./script.js"></script>
+    <script src="./js/jsscript.js"></script>
+</body>
+
 </html>
