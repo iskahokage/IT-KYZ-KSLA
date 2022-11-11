@@ -13,7 +13,3 @@ function upperCase() {
     element.value = element.value.toUpperCase()
 }
 
-function displayChange() {
-    let elem = document.getElementsByName('positions')[0];
-
-}
