@@ -303,6 +303,10 @@ select {
 }
 
 
+.fetchBlock *{
+     color: blue;
+}
+
 /* footer*/
 
 .footer {

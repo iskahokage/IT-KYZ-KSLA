@@ -62,8 +62,6 @@ function display(a) {
     a.innerHTML = "I Love  you Begimai";
 }
 
-
-
 // let element_container = document.querySelector('.element_container');
 
 // let elem1 = document.createElement("p");
@@ -125,3 +123,22 @@ let time = new Date().getHours();
 if (time > 13) {
     mask.classList.add('dark-theme')
 }
+
+// 
+
+let API ='https://restcountries.com/v2';
+let fetchBlock = document.querySelector('.fetchBlock')
+
+fetch(`${API}/all`)
+.then(data => data.json())
+.then(element =>{
+    element.forEach(item=> {
+        fetchBlock.insertAdjacentHTML('beforeend',
+        `
+        <li>${item.name}</li>
+        <img src="${item.flags.png}"/>
+         <li>${item.code}</li>
+         <li>${item.callingCodes}</li>
+        `)
+    });
+})
