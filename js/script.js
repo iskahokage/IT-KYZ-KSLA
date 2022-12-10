@@ -58,3 +58,21 @@ let time = new Date().getHours();
 if(time > 17){
     mask.classList.add('dark-theme')
 }
+
+let API = 'https://restcountries.com/v2';
+
+let fetchBlock = document.querySelector('.fetchBlock')
+
+fetch(`${API}/all`)
+.then(data => data.json())
+.then(element => {
+    console.log(element)
+    element.forEach(item => {
+        fetchBlock.insertAdjacentHTML('beforeend', 
+        `
+            <li>${item.name}</li>
+            <img src="${item.flags.png}"/>
+            <li>${item.callingCodes}</li>
+        `)
+    });
+})
